@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    background-color: #ed8936;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+ul {
+    text-align: center;
+    list-style-type: none
+}
+
+li {
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.textpink {
+    color: #DF0962;
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ulabout {
+    font-size: 24px;
+}
+
+.espacoh2 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+.project {
+    background-color: #ed8936;
+    background-size: 100%;
+}
+
+.eu {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.top {
+    margin-bottom: 150px;
+}
+
+.corbutton {
+    background-color: #DF0962;
+    color: white;
+    font-style: bolder;
+}
+
+.principalcontainer {
+    position: relative;
+    width: 83%;
+    height: 175px;
+    margin: 7% auto;
+    outline: hidden;
+}
+
+.principal h1 {
+    font-size: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    font-size: 60px;
+    font-style: bolder;
+}
+
+.section {
+    scroll-snap-align: end;
+    height: 100vh;
+
+    /* unrelated visual styling */
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.section-1 {
+    background-image: url(imagens/background4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-2 {
+    background: #805ad5;
+}
+
+.section-3 {
+    background: #38a169;
+}
+
+.section-4 {
+    background: #63b3ed;
+}
+
+.section-5 {
+    background: #ed8936;
+}
+
+.section-6 {
+    height: 12vh;
+}
+
+
+
+section h1.t1:after {
+    position: absolute;
+    content: "";
+    line-height: 48px;
+    left: 20%;
+    top: 50%;
+    animation: welcome 7.5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+section h1.t2:after {
+    position: absolute;
+    content: "";
+    line-height: 48px;
+    left: 20%;
+    top: 90%;
+    animation: bemvindo 7.5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes welcome {
+    0% {
+        content: "W";
+    }
+
+    5% {
+        content: "WE";
+    }
+
+    11% {
+        content: "WEL";
+    }
+
+    16% {
+        content: "WELC";
+    }
+
+    22% {
+        content: "WELCO";
+    }
+
+    27% {
+        content: "WELCOM";
+    }
+
+    33% {
+        content: "WELCOME ";
+    }
+
+    38% {
+        content: "WELCOME T";
+    }
+
+    44% {
+        content: "WELCOME TO ";
+    }
+
+    49% {
+        content: "WELCOME TO M";
+    }
+
+    55% {
+        content: "WELCOME TO MY ";
+    }
+
+    60% {
+        content: "WELCOME TO MY P";
+    }
+
+    66% {
+        content: "WELCOME TO MY PO";
+    }
+
+    71% {
+        content: "WELCOME TO MY POR";
+    }
+
+    76% {
+        content: "WELCOME TO MY PORT";
+    }
+
+    82% {
+        content: "WELCOME TO MY PORTF";
+    }
+
+    87% {
+        content: "WELCOME TO MY PORTFO";
+    }
+
+    93% {
+        content: "WELCOME TO MY PORTFOLI";
+    }
+
+    100% {
+        content: "WELCOME TO MY PORTFOLIO!";
+    }
+}
+
+@keyframes bemvindo {
+    0% {
+        content: "B";
+    }
+
+    4% {
+        content: "BE";
+    }
+
+    8% {
+        content: "BEM";
+    }
+
+    12% {
+        content: "BEM-";
+    }
+
+    16% {
+        content: "BEM-V";
+    }
+
+    20% {
+        content: "BEM-VI";
+    }
+
+    24% {
+        content: "BEM-VIN";
+    }
+
+    28% {
+        content: "BEM-VIND";
+    }
+
+    32% {
+        content: "BEM-VINDO";
+    }
+
+    36% {
+        content: "BEM-VINDOS";
+    }
+
+    40% {
+        content: "BEM-VINDOS A";
+    }
+
+    44% {
+        content: "BEM-VINDOS AO ";
+    }
+
+    48% {
+        content: "BEM-VINDOS AO M";
+    }
+
+    52% {
+        content: "BEM-VINDOS AO ME";
+    }
+
+    56% {
+        content: "BEM-VINDOS AO MEU ";
+    }
+
+    60% {
+        content: "BEM-VINDOS AO MEU P";
+    }
+
+    64% {
+        content: "BEM-VINDOS AO MEU PO";
+    }
+
+    68% {
+        content: "BEM-VINDOS AO MEU POR";
+    }
+
+    72% {
+        content: "BEM-VINDOS AO MEU PORT";
+    }
+
+    76% {
+        content: "BEM-VINDOS AO MEU PORTI";
+    }
+
+    80% {
+        content: "BEM-VINDOS AO MEU PORTIF";
+    }
+
+    84% {
+        content: "BEM-VINDOS AO MEU PORTIFÓ";
+    }
+
+    88% {
+        content: "BEM-VINDOS AO MEU PORTIFÓL";
+    }
+
+    92% {
+        content: "BEM-VINDOS AO MEU PORTIFÓLI";
+    }
+
+    96% {
+        content: "BEM-VINDOS AO MEU PORTIFÓLIO";
+    }
+
+    100% {
+        content: "BEM-VINDOS AO MEU PORTIFÓLIO!";
+    }
+}
