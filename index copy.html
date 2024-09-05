@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
               <a class="nav-link textpink fw-bold" aria-current="page" href="index.html">Home</a>
               <a class="nav-link textpink fw-bold" href="#abouth1">Sobre mim</a>
               <a class="nav-link textpink fw-bold" href="#contacth1">Contato</a>
-              <a class="nav-link textpink fw-bold" href="projetos.html">Projetos</a>
+              <a class="nav-link textpink fw-bold" href="#projectsh1">Projetos</a>
             </div>
           </div>
         </div>
@@ -50,35 +51,31 @@
     <section class="section section-2">
       <div class="container">
         <div class="about">
-          <h1 class="vt323-regular textpink center" id="abouth1">I'm here || Eu aqui</h1>
-          <h2 class="center espacoh2">Brayan Félix</h2>
-          <img src="imagens/eu.png" alt="eu" class="eu">
+          <h1 class="vt323-regular textpink center py-5" id="abouth1">I'm here || Eu aqui</h1>
+
+          <h2 class="center">Brayan Félix</h2>
+          <img src="imagens/eu.png" alt="eu" class="eu img-fluid">
         </div>
       </div>
     </section>
-    <section class="section section-3">
-      <div class="container">
-        <div class="about">
-          <h1 class="vt323-regular textpink center" id="abouth1">ABOUT ME || SOBRE MIM</h1>
-          <ul class="ulabout">
-            <li><strong>Web Developer | | Desenvolvedor Web</strong> <br> Systems Development Technician | | Técnico em
-              Desenvolvimento de Sistemas <br> <strong>College:</strong> Systems Analysis and Development | |
-              <strong>Faculdade:</strong> Análise e Desenvolvimento de Sistemas</li>
-            <br>
-            <li><strong>Age | | Idade </strong><br> 18 Years old | | 18 Anos</li>
-            <br>
-            <li><strong>Languages | | Linguagens</strong> <br> • Javascript <br> • Bootstrap <br> • CSS <br> • HTML</li>
-            <br>
-            <li><strong>Hobbies | | Passa Tempo</strong> <br> • Play games | | • Jogar jogos<br> • Watch gaseries | | •
-              Assistir séries <br> • Go out with family and friends | | Sair com a família e amigos <br> • Ride a
-              motorcycle | | • Andar de moto</li>
-          </ul>
-        </div>
+    <section class="section section-3 d-flex align-items-center justify-content-center min-vh-100 py-5">
+      <div class="container text-center">
+        <h1 class="vt323-regular textpink" id="abouth1">ABOUT ME || SOBRE MIM</h1>
+        <ul class="ulabout list-unstyled">
+          <li><strong>Web Developer | | Desenvolvedor Web</strong> <br> Systems Development Technician | | Técnico em Desenvolvimento de Sistemas <br> <strong>College:</strong> Systems Analysis and Development | | <strong>Faculdade:</strong> Análise e Desenvolvimento de Sistemas</li>
+          <br>
+          <li><strong>Age | | Idade</strong><br> 18 Years old | | 18 Anos</li>
+          <br>
+          <li><strong>Languages | | Linguagens</strong> <br> • Javascript <br> • Bootstrap <br> • CSS <br> • HTML</li>
+          <br>
+          <li><strong>Hobbies | | Passa Tempo</strong> <br> • Play games | | • Jogar jogos<br> • Watch gaseries | | • Assistir séries <br> • Go out with family and friends | | Sair com a família e amigos <br> • Ride a motorcycle | | • Andar de moto</li>
+        </ul>
       </div>
     </section>
+    
     <section class="section section-4">
       <div class="about contact center">
-        <h1 class="vt323-regular textpink center top" id="contacth1">CONTACT || CONTATO</h1>
+        <h1 class="vt323-regular textpink center top py-5" id="contacth1">CONTACT || CONTATO</h1>
         <p><strong><u>Whatsapp:</u></strong> <a
             href="https://wa.me/5517996727898?text=Ol%C3%A1,%20acabei%20de%20ver%20seu%20portif%C3%B3lio!"
             target="_blank">(17)99672-7898</a></p>
@@ -92,43 +89,39 @@
             target="_blank">brayanofelix@gmail.com</a></p>
       </div>
     </section>
-    <div class="container d-flex justify-content-around project">
-      <section class="section section-5">
-        <h1 class="vt323-regular textpink center top" id="contacth1">PROJECTS || PROJETOS</h1>
+    <section class="section section-5 min-vh-100 d-flex flex-column align-items-center justify-content-center py-5">
+      <div class="container text-center">
+        <h1 class="vt323-regular textpink center top" id="projectsh1">PROJECTS || PROJETOS</h1>
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="imagens/logosolarenergy.png" class="card-img-top" alt="solarenergy">
+            <div class="card">
+              <img src="imagens/background1.png" class="card-img-top" alt="solarenergy">
               <div class="card-body">
                 <h5 class="card-title">Solar Energy</h5>
                 <p class="card-text">Um projeto de uma Startup de tecnologia verde, para venda de painéis solares.</p>
-                <a href="https://brayanofelix.github.io/solarenergy/" target="_blank" class="btn corbutton">Conheça</a>
+                <div class="btn-container">
+                  <a href="https://brayanofelix.github.io/solarenergy/" target="_blank" class="btn corbutton">Conheça</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img src="imagens/noite.jpg" class="card-img-top" alt="noite">
               <div class="card-body">
                 <h5 class="card-title">Horário do Dia</h5>
                 <p class="card-text">Um simples site que mostra o horário atual, o design muda conforme a hora.</p>
-                <a href="https://brayanofelix.github.io/horariododia/" target="_blank" class="btn corbutton">Conheça</a>
+                <div class="btn-container">
+                  <a href="https://brayanofelix.github.io/horariododia/" target="_blank" class="btn corbutton">Conheça</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <section class="section section-6">
-      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.05);">
-          © Desenvolvido por:
-          <a class="text-reset fw-bold" href="https://www.linkedin.com/in/brayan-f%C3%A9lix-a493a6255/"
-            target="_blank">Brayan Félix</a>
-        </div>
-      </footer>
+      </div>
     </section>
+    
   </main>
+  <script src="animations.js"></script>
 </body>
-
 </html>

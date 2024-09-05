@@ -7,21 +7,25 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     scroll-snap-type: y mandatory;
     background-color: #ed8936;
+    overflow: auto;
 }
 
 nav {
     display: flex;
     text-align: center;
     justify-content: center;
-
 }
 
 ul {
     text-align: center;
-    list-style-type: none
+    list-style-type: none;
 }
 
 li {
@@ -34,8 +38,8 @@ a {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .textpink {
@@ -49,13 +53,11 @@ img {
 }
 
 .ulabout {
+    margin: 0 auto;
     font-size: 24px;
 }
 
-.espacoh2 {
-    margin-top: 20px;
-    font-size: 50px;
-}
+
 
 .center {
     text-align: center;
@@ -67,12 +69,35 @@ img {
     background-size: 100%;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-container {
+    margin-top: auto;
+}
+
 .eu {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .top {
@@ -105,18 +130,24 @@ img {
 }
 
 .section {
-    scroll-snap-align: end;
+    scroll-snap-align: start;
     height: 100vh;
-
-    /* unrelated visual styling */
+    padding: 1rem;
+    margin: 0 auto;
     color: white;
     font-size: 30px;
     font-weight: bold;
-    padding: 40px;
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .section-1 {
+    animation: none;
     background-image: url(imagens/background4.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -128,6 +159,10 @@ img {
 }
 
 .section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background: #38a169;
 }
 
@@ -136,14 +171,17 @@ img {
 }
 
 .section-5 {
-    background: #ed8936;
+    background: #91cf1e;
+    position: relative;
+    padding: 2rem 1rem;
+    overflow: hidden;
 }
 
-.section-6 {
-    height: 12vh;
+.section-5 h1 {
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 3rem;
 }
-
-
 
 section h1.t1:after {
     position: absolute;
@@ -165,6 +203,11 @@ section h1.t2:after {
     animation-fill-mode: forwards;
 }
 
+@media (max-width: 768px) {
+    .section-5 h1 {
+        font-size: 2rem;
+    }
+}
 
 @keyframes welcome {
     0% {
