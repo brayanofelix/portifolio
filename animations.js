@@ -34,5 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Verifica o estado inicial
+    handleScroll();
 });
