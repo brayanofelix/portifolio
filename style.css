@@ -4,20 +4,31 @@
 }
 
 html {
-    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
 
-
-.vt323-regular {
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
+body::-webkit-scrollbar {
+    display: none;
 }
 
+body {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
 ul {
     text-align: center;
-    list-style-type: none
+    list-style-type: none;
+}
+
+li {
+    font-size: 20px;
 }
 
 a {
@@ -25,27 +36,79 @@ a {
     text-decoration: none;
 }
 
-.principal {
-    background-image: url(imagens/background2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-width: 100%;
-    height: 100%;
-    color: white;
-    height: 640px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img {
+    width: 100%;
+    height: auto;
 }
 
-.principal h1 {
-    font-size: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    font-size: 45px;
+.textpink {
+    color: #1F51FF;
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ulabout {
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+.project {
+    background-color: #ed8936;
+    background-size: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    border: none;
+}
+
+.card-body {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-container {
+    margin-top: auto;
+}
+
+.eu {
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.top {
+    margin-bottom: 150px;
+}
+
+.corbutton {
+    background-color: #2C2C2C;
+    color: white;
+    font-style: bolder;
 }
 
 .principalcontainer {
@@ -56,34 +119,90 @@ a {
     outline: hidden;
 }
 
-.about {
-    text-align: center;
-    margin-top: 30px;
+.principal h1 {
+    font-size: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    font-size: 60px;
+    font-style: bolder;
 }
 
-.textpink {
-    color: #DF0962;
+.section {
+    scroll-snap-align: start;
+    height: 100vh;
+    padding: 1rem;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
 }
 
-
-.about {
-    height: 700px;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-nav {
-    background-color: black;
+.section-1 {
+    animation: none;
+    background-image: url(imagens/background4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-2 {
+    background: linear-gradient(to bottom right, #2C2C2C 50%, #1F51FF 50%);
+}
+
+.section-3 {
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom left, #1F51FF 50%, #4B0082 50%);
+}
+
+.section-3 h1 {
+    color: #4B0082;
+}
+
+.section-4 {
+    background: linear-gradient(to bottom right, #4B0082 50%, #2E8B57 50%);
+}
+
+.section-4 h1 {
+    color: #2E8B57;
+}
+
+.section-5 {
+    background: linear-gradient(to bottom left, #2E8B57 50%, #2C2C2C 50%);
+    position: relative;
+    padding: 2rem 1rem;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 30%;
+}
+
+.section-5 h1 {
+    color: #2C2C2C;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.section-5 h2 {
+    color: #2E8B57;
 }
 
 section h1.t1:after {
     position: absolute;
     content: "";
-    width: 100%;
-    height: 100%;
     line-height: 48px;
-    left: 30%;
+    left: 20%;
     top: 50%;
     animation: welcome 7.5s linear 1;
     animation-fill-mode: forwards;
@@ -92,15 +211,79 @@ section h1.t1:after {
 section h1.t2:after {
     position: absolute;
     content: "";
-    width: 100%;
-    height: 100%;
     line-height: 48px;
-    left: 30%;
+    left: 20%;
     top: 90%;
     animation: bemvindo 7.5s linear 1;
     animation-fill-mode: forwards;
 }
 
+@media (max-width: 380px){
+    .section-3 li{
+        font-size: 5px;
+    }
+    .section-4 p{
+        font-size: 20px;
+    }
+    .card {
+        height: 580px;
+    }
+}
+
+@media (max-width: 390px) {
+    .card {
+        height: 500px;
+    }
+    .section-3 li{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-5 {
+        height: 100%;
+        
+    }
+
+    .section-5 h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        height: 560px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .section-5 h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        height: 560px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .section-5 h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        height: 760px;
+    }
+}
 
 @keyframes welcome {
     0% {
@@ -174,6 +357,7 @@ section h1.t2:after {
     93% {
         content: "WELCOME TO MY PORTFOLI";
     }
+
     100% {
         content: "WELCOME TO MY PORTFOLIO!";
     }
@@ -251,27 +435,35 @@ section h1.t2:after {
     68% {
         content: "BEM-VINDOS AO MEU POR";
     }
+
     72% {
         content: "BEM-VINDOS AO MEU PORT";
     }
+
     76% {
         content: "BEM-VINDOS AO MEU PORTI";
     }
+
     80% {
         content: "BEM-VINDOS AO MEU PORTIF";
     }
+
     84% {
         content: "BEM-VINDOS AO MEU PORTIFÓ";
     }
+
     88% {
         content: "BEM-VINDOS AO MEU PORTIFÓL";
     }
+
     92% {
         content: "BEM-VINDOS AO MEU PORTIFÓLI";
     }
+
     96% {
         content: "BEM-VINDOS AO MEU PORTIFÓLIO";
     }
+
     100% {
         content: "BEM-VINDOS AO MEU PORTIFÓLIO!";
     }
