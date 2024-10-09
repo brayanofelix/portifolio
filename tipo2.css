@@ -32,8 +32,6 @@ li {
 }
 
 a {
-    padding-left: 15px;
-    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -43,12 +41,8 @@ img {
     height: auto;
 }
 
-.text-cor {
-    color: #87E428;
-}
-
-.text-azul {
-    color: #7BE7F2;
+.textpink {
+    color: #1F51FF;
 }
 
 .vt323-regular {
@@ -112,7 +106,7 @@ img {
 }
 
 .corbutton {
-    background-color: #7BE7F2;
+    background-color: #2C2C2C;
     color: white;
     font-style: bolder;
 }
@@ -155,14 +149,14 @@ img {
 
 .section-1 {
     animation: none;
-    background-image: url(imagens/imagem1.gif);
+    background-image: url(imagens/background2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .section-2 {
-    background: linear-gradient(to bottom right, #0A1817 50% , #0A1817 50%);
+    background: linear-gradient(to bottom right, #2C2C2C 50% , #1F51FF 50%);
 }
 
 .section-3 {
@@ -170,26 +164,23 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to bottom left, #0A1817 50%, #0A1817 50%);
+    background: linear-gradient(to bottom left, #1F51FF 50%, #2C2C2C 50%);
 }
 
 .section-3 h1 {
+    color: #2C2C2C;
 }
 
 .section-4 {
-    background: linear-gradient(to bottom right, #0A1817 50%, #0A1817 50%);
+    background: linear-gradient(to bottom right, #2C2C2C 50%, #1F51FF 50%);
 }
 
-.section-4 a {
-    color: white;
-}
-
-.section-4 u {
-    color: #7BE7F2;
+.section-4 h1 {
+    color: #1F51FF;
 }
 
 .section-5 {
-    background: linear-gradient(to bottom left, #0A1817 50%, #0A1817 50%);
+    background: linear-gradient(to bottom left, #1F51FF 50%, #2C2C2C 50%);
     position: relative;
     padding: 2rem 1rem;
     overflow: hidden;
@@ -198,12 +189,13 @@ img {
 }
 
 .section-5 h1 {
+    color: #2C2C2C;
     padding: 1rem;
     font-size: 3rem;
 }
 
 .section-5 h2 {
-    color: #7BE7F2;
+    color: #1F51FF;
 }
 
 section h1.t1:after {
