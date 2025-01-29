@@ -1,0 +1,18 @@
+:root {
+    --background-light: #fff;
+    --background-dark: #333;
+    --text-light: #333;
+    --text-dark: #fff;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
