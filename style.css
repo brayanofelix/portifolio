@@ -33,6 +33,7 @@ body.dark-mode nav{
 }
 
 nav {
+    position: relative;
     height: 9vh;
     background-color: var(--background-light);
 }
@@ -66,6 +67,8 @@ a {
 }
 
 .button-modo {
-    display: inline;
-    margin-left: 50px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
