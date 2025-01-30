@@ -1,8 +1,20 @@
 :root {
     --background-light: #fff;
-    --background-dark: #333;
-    --text-light: #333;
+    --background-dark-claro: #232323;
+    --background-dark-escuro: #191919;
     --text-dark: #fff;
+    --text-light: #EA5C5C;
+}
+
+.dark-mode {
+    --background-dark-claro: #232323;
+    --background-dark-escuro: #191919;
+    --text-light: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -13,6 +25,47 @@ body {
 }
 
 body.dark-mode {
-    background-color: var(--background-dark);
+    background-color: var(--background-dark-escuro);
+}
+
+body.dark-mode nav{
+    background-color: var(--background-dark-claro);
+}
+
+nav {
+    height: 9vh;
+    background-color: var(--background-light);
+}
+
+nav.dark-mode {
+    background-color: var(--background-dark-claro);
+}
+
+
+nav.dark-mode li {
     color: var(--text-dark);
+}
+
+nav.dark-mode a {
+    color: var(--text-dark);
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin-left: 50px;
+}
+
+a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.button-modo {
+    display: inline;
+    margin-left: 50px;
 }
