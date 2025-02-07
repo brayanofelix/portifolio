@@ -56,6 +56,10 @@ p {
   font-size: 18px;
 }
 
+h1 {
+  font-weight: bolder;
+}
+
 h2 {
   font-family: 'Name';
 }
@@ -77,8 +81,8 @@ i {
 }
 
 .botao {
-  color: var(--dark-claro-color);
-  border: 1px solid var(--dark-claro-color);
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
   border-radius: 20px;
   background-color: var(--dark-color);
   font-weight: bolder;
@@ -86,7 +90,12 @@ i {
 }
 
 .botao:hover {
-  color: var(--light-color);
+  color: var(--dark-claro-color);
+  border: 1px solid var(--light-color);
+  border-radius: 20px;
+  background-color: var(--light-color);
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 .darkmode .botao {
@@ -98,10 +107,10 @@ i {
 }
 
 .darkmode .botao:hover {
-  color: var(--light-color);
+  color: var(--dark-color);
   border: 1px solid var(--light-color);
   border-radius: 20px;
-  background-color: var(--dark-claro-color);
+  background-color: var(--light-color);
   font-weight: bolder;
 }
 
@@ -128,6 +137,10 @@ i {
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+}
+
+.codigo {
+  background-color: #E2E2E2;
 }
 
 .titulo {
@@ -204,7 +217,12 @@ i {
   border-radius: 10px;
   padding: 30px;
   text-align: center;
+  border: 3px solid #E2E2E2;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.darkmode .custom-card {
+  border: 3px solid var(--dark-claro-color);
 }
 
 .custom-card h3 {
