@@ -1,0 +1,419 @@
+@font-face {
+  font-family: 'Name';
+  src: url(Fieldwork-Geo-Fat-Demo.otf);
+}
+
+:root {
+  --dark-color: #fff;
+  --light-icon-color: #FFDE59;
+
+  --light-color: #EA5C5C;
+  --dark-claro-color: #232323;
+  --dark-escuro-color: #191919;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+nav {
+  height: 3.7em;
+}
+
+
+ul {
+  display: flex;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  margin-left: 50px;
+  font-family: 'Lora', serif;
+}
+
+.nav-link {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--dark-claro-color);
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.texto {
+  font-size: 18px;
+}
+
+h2 {
+  font-family: 'Name';
+}
+
+i {
+  color: var(--light-color);
+}
+
+.foto {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid var(--light-color);
+}
+
+.codigo,
+.titulos {
+  color: var(--light-color);
+}
+
+.botao {
+  color: var(--dark-claro-color);
+  border: 1px solid var(--dark-claro-color);
+  border-radius: 20px;
+  background-color: var(--dark-color);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.botao:hover {
+  color: var(--light-color);
+}
+
+.darkmode .botao {
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+  border-radius: 20px;
+  background-color: var(--dark-claro-color);
+  font-weight: bolder;
+}
+
+.darkmode .botao:hover {
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+  border-radius: 20px;
+  background-color: var(--dark-claro-color);
+  font-weight: bolder;
+}
+
+.hab-icon {
+  color: var(--dark-escuro-color);
+}
+
+.div-lado-a-lado {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.info,
+.codigo {
+  width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+.subtitulo {
+  font-size: 20px;
+}
+
+
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+}
+
+.btn {
+  background-color: #fff;
+  width: 4em;
+  height: 2em;
+  border-radius: 10em;
+  padding: 0 0.5em;
+
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, .1),
+    inset 0 8px 8px rgba(0, 0, 0, .1),
+    inset 0 -4px 4px rgba(0, 0, 0, .1);
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.btn__indicator {
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+
+  position: absolute;
+
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+
+  transition: transform .3s ease;
+}
+
+.btn__icon-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__icon {
+  color: var(--light-icon-color);
+  font-size: 0.6rem;
+}
+
+.btn__icon.animated {
+  animation: spin 0.5s;
+}
+
+
+
+
+
+/* Habilidades */
+.custom-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card h3 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.custom-icon {
+  background-color: var(--light-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.darkmode .hab-icon {
+  color: var(--dark-escuro-color);
+}
+
+.custom-icon img {
+  width: 30px;
+}
+
+.highlight {
+  color: var(--dark-claro-color);
+  font-weight: bold;
+}
+
+.darkmode .custom-card {
+  background-color: var(--dark-claro-color);
+}
+
+.darkmode h2 {
+  color: var(--dark-color);
+}
+
+/*Fim do Habilidades*/
+
+/*Projetos */
+
+.custom-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/*Fim do Projetos */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.darkmode {
+  background-color: var(--dark-escuro-color);
+}
+
+.darkmode .btn {
+  background-color: var(--dark-claro-color);
+
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, .3),
+    inset 8px 0 8px rgba(0, 0, 0, .3),
+    inset 0 -4px 4px rgba(0, 0, 0, .3);
+}
+
+.darkmode .btn__indicator {
+  transform: translateX(1.5em);
+  background-color: var(--dark-claro-color);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
+}
+
+.darkmode .btn__icon {
+  color: var(--dark-color);
+}
+
+.darkmode nav {
+  background-color: var(--dark-claro-color);
+}
+
+.darkmode li,
+.darkmode p,
+.darkmode h2,
+.darkmode label {
+  color: var(--dark-color);
+}
+
+.darkmode a, .darkmode button {
+  color: var(--dark-color);
+}
+
+.darkmode a:hover, .darkmode button:hover {
+  color: var(--light-color);
+}
+
+.darkmode h2 {
+  color: var(--light-color);
+  
+}
+
+.darkmode .titulos {
+  color: var(--dark-color);
+  font-family: 'Name';
+}
+
+.darkmode .codigo {
+  background-color: var(--dark-claro-color);
+}
+
+.darkmode footer {
+  background-color: var(--dark-claro-color);
+}
+
+.darkmode footer div {
+  color: var(--dark-color);
+}
+
+#home {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/vermelho1.svg') no-repeat center center;
+  background-size: cover;
+}
+
+#habilidades {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/vermelho2.svg') no-repeat center center;
+  background-size: cover;
+}
+
+#projetos {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/vermelho1.svg') no-repeat center center;
+  background-size: cover;
+}
+
+#sobremim {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/vermelho2.svg') no-repeat center center;
+  background-size: cover;
+}
+
+#contato {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/vermelho1.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.darkmode #home {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/preto1.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.darkmode #habilidades {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/preto2.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.darkmode #projetos {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/preto1.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.darkmode #sobremim {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/preto2.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.darkmode #contato {
+  width: 98.9vw;
+  min-height: 100vh;
+  background: url('/imagens/preto1.svg') no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .codigo {
+    font-size: 12px;
+  }
+}
+

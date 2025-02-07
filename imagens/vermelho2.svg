@@ -1,0 +1,24 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_3)">
+<rect width="1920" height="1080" fill="white"/>
+<g clip-path="url(#clip1_2_3)">
+<rect width="1920" height="1080" transform="matrix(1 0 0 -1 0 1080)" fill="white"/>
+<g clip-path="url(#clip2_2_3)">
+<path d="M1920 1080H0V0H1920V1080Z" fill="white"/>
+<path d="M1542 -1.50204e-05C1569.48 39.72 1596.96 79.44 1610.64 128.16C1624.44 176.76 1624.56 234.36 1652.76 267.24C1680.84 300.12 1737.12 308.28 1786.32 322.56C1835.64 336.96 1877.76 357.48 1920 378V-1.50204e-05H1542Z" fill="#EA5C5C"/>
+<path d="M378 1080C333 1048.2 288 1016.4 277.2 965.16C266.4 914.04 289.68 843.36 267.24 812.76C244.8 782.04 176.64 791.4 124.44 779.52C72.24 767.76 36.12 734.88 0 702V1080H378Z" fill="#EA5C5C"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_2_3">
+<rect width="1920" height="1080" fill="white"/>
+</clipPath>
+<clipPath id="clip1_2_3">
+<rect width="1920" height="1080" fill="white" transform="matrix(1 0 0 -1 0 1080)"/>
+</clipPath>
+<clipPath id="clip2_2_3">
+<rect width="1920" height="1080" fill="white" transform="matrix(1 0 0 -1 0 1080)"/>
+</clipPath>
+</defs>
+</svg>

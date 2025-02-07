@@ -1,2 +1,4 @@
-# Portifolio
- Meu novo portifolio mais sofisticado e com animações
+# Animated-Dark-Mode-Button
+Animated Dark Mode Toggle Button Using HTML, CSS &amp; JavaScript
+
+![Screenshot](Miniatura.png)

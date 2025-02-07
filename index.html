@@ -1,33 +1,246 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brayan Félix - Portifólio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brayan Félix - Portifólio</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="shortcut icon" href="imagens/bf-logo.ico" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <img src="" alt="Logo">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagens/bf-logo.png" alt="logo" style="width: 50px; height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav w-100 d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobremim">SOBRE MIM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">HABILIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">PROJETOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">CONTATO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn">
+          <div class="btn__indicator">
+            <div class="btn__icon-container">
+              <i class="btn__icon fa-solid"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">sobre mim</a></li>
-                <li><a href="#">projetos</a></li>
-                <li><a href="#">contato</a></li>
-            </ul>
+  <main>
+    <section id="home" class="min-vh-100 d-flex flex-column justify-content-center py-5">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="info d-flex flex-column align-items-center" style="width: auto">
+            <p class="subtitulo centralizar">Olá, meu nome é</p>
+            <h2 class="titulo"><strong>BRAYAN FELIX</strong></h2>
+            <p class="subtitulo">DESENVOLVEDOR WEB FRONT-END</p>
+            <div class="centralizar">
+              <a href="https://www.linkedin.com/in/brayanfelix/" target="_blank">
+                <i class="fab fa-linkedin fs-2"></i>
+              </a>
+              <a href="https://github.com/brayanofelix" target="_blank" class="mx-3">
+                <i class="fab fa-github fs-2"></i>
+              </a>
+            </div>
+          </div>
 
-            <button id="toggle-mode" class="button-modo">Trocar Modo</button>
-        </nav>
-    </header>
-    <main>
-        <h1>Bem-vindo ao meu site!</h1>
-        <p>Conteúdo do site aqui...</p>
-    </main>
+          <div class="codigo d-flex flex-column align-items-start" style="width: auto;">
+            <p>1 class <strong>Pessoa</strong> {</p>
+            <p>2&nbsp;&nbsp;&nbsp;&nbsp;construtor() {</p>
+            <p>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.nome = "<strong>Brayan Félix</strong>";</p>
+            <p>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.caracteristicas =
+              ["<strong>DESENVOLVEDOR</strong>", "<strong>DESIGNER</strong>"];</p>
+            <p>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.idade = new Date().getFullYear() - 2005;</p>
+            <p>6&nbsp;&nbsp;&nbsp;&nbsp;} </p>
+            <p>7 }</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="habilidades" class="min-vh-100 d-flex flex-column justify-content-center py-5">
+      <div class="container mt-5">
+        <h1 class="titulos text-center mb-5">Habilidades</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-4">
+            <div class="custom-card">
+              <div class="custom-icon">
+                <i class="bi bi-code-slash hab-icon"></i>
+              </div>
+              <h2>Desenvolvedor Front end</h2>
+              <p>Gosto de codificar do zero e transformar ideias em realidade no navegador.</p>
+              <p class="highlight">Linguagens que utilizo:</p>
+              <p>HTML, CSS, Javascript, Git</p>
+              <p class="highlight">Ferramentas de Desenvolvimento:</p>
+              <p>Bootstrap, Github, VS Code</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="custom-card">
+              <div class="custom-icon">
+                <i class="bi bi-palette hab-icon"></i>
+              </div>
+              <h2>Designer</h2>
+              <p>Valorizo estrutura simples, padrões de design limpos e interações intuitivas.</p>
+              <p class="highlight">Coisas que gosto de projetar:</p>
+              <p>UX, UI, Web, Apps, Logos</p>
+              <p class="highlight">Ferramentas de Design:</p>
+              <p>Figma, Canva</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="min-vh-100 d-flex flex-column justify-content-center py-5">
+      <div class="container mt-5">
+        <h1 class="titulos text-center mb-5">Projetos</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-4">
+            <div class="custom-card">
+              <img src="imagens/background1.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h2 class="card-title text-cor mt-3">Solar Energy</h2>
+                <p class="card-text mt-2">Um projeto de uma Startup de tecnologia verde, para venda de painéis solares.
+                </p>
+                <div class="btn-container">
+                  <a href="https://brayanofelix.github.io/solarenergy/" target="_blank"
+                    class="d-block mx-auto w-50 p-1 botao">Visite</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="custom-card">
+              <img src="imagens/background.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h2 class="card-title text-cor mt-3">Felix Advocacia</h2>
+                <p class="card-text mt-2">Um projeto de Advocacia, para apresentação da empresa e venda de serviços.</p>
+                <div class="btn-container">
+                  <a href="https://brayanofelix.github.io/felixadvocacia/" target="_blank"
+                    class="d-block mx-auto w-50 p-1 botao">Visite</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremim" class="min-vh-100 d-flex flex-column justify-content-center py-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="d-flex flex-column align-items-center mb-5 col-12">
+            <h1 class="titulos">Sobre mim</h1>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-start">
+          <div class="d-flex flex-column align-items-start mt-5 col-12 col-md-6">
+            <img src="imagens/foto.jpg" class="foto img-fluid">
+          </div>
+
+          <div class="d-flex flex-column align-items-end mt-5 col-12 col-md-6">
+            <p class="texto">
+              Olá! Sou Brayan Felix, tenho 19 anos e sou técnico em Desenvolvimento de Sistemas. Atualmente, estou
+              atuando como estagiário na Coditech, onde estou me aprofundando na área de front-end. Tenho uma grande
+              paixão por criar interfaces de usuário dinâmicas e responsivas, sempre focando na experiência do usuário.
+            </p>
+            <p class="texto">
+              Durante minha trajetória, tive a oportunidade de trabalhar com diversas tecnologias, como HTML, CSS,
+              JavaScript e frameworks modernos, sempre buscando aprender e me aprimorar a cada novo projeto.
+            </p>
+            <p class="texto">
+              Sou motivado, detalhista e gosto de me desafiar constantemente para encontrar soluções criativas para os
+              problemas
+              do dia a dia. Acredito que o aprendizado contínuo é a chave para o sucesso na tecnologia, e é por isso que
+              estou sempre
+              em busca de novos conhecimentos e oportunidades para crescer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-5">
+      <div class="container">
+        <h1 class="text-center mb-4 titulos">Contato</h2>
+
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <form id="formContato">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="d-block mx-auto w-25 p-1 botao">Enviar</button>
+              </form>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-muted w-100">
+    <div class="text-center p-3">
+      © Desenvolvido por:
+      <a class="text-reset fw-bold" href="https://www.linkedin.com/in/brayanfelix/"
+        target="_blank">Brayan Félix</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
