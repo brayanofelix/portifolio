@@ -327,71 +327,91 @@ body.darkmode {
 #home {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/vermelho1.svg') no-repeat center center;
+  background-image: url('/imagens/vermelho1.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #habilidades {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/vermelho2.svg') no-repeat center center;
+  background-image: url('/imagens/vermelho2.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #projetos {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/vermelho1.svg') no-repeat center center;
+  background-image: url('/imagens/vermelho1.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #sobremim {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/vermelho2.svg') no-repeat center center;
+  background-image: url('/imagens/vermelho2.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #contato {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/vermelho1.svg') no-repeat center center;
+  background-image: url('/imagens/vermelho1.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .darkmode #home {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/preto1.svg') no-repeat center center;
+  background-image: url('/imagens/preto1.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .darkmode #habilidades {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/preto2.svg') no-repeat center center;
+  background-image: url('/imagens/preto2.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .darkmode #projetos {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/preto1.svg') no-repeat center center;
+  background-image: url('/imagens/preto1.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .darkmode #sobremim {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/preto2.svg') no-repeat center center;
+  background-image: url('/imagens/preto2.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .darkmode #contato {
   width: 98.9vw;
   min-height: 100vh;
-  background: url('/imagens/preto1.svg') no-repeat center center;
+  background-image: url('/imagens/preto1.svg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
